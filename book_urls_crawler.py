@@ -24,7 +24,7 @@ user.send_keys('your_user_email')
 password = browser.find_element(By.XPATH, '//*[@id="ap_password"]')
 
 # Read password from a text file
-with open('test.txt', 'r') as myfile:
+with open('text.txt', 'r') as myfile:
     Password = myfile.read().replace('\n', '')
 password.send_keys(Password)
 
