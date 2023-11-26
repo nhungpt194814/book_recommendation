@@ -18,7 +18,7 @@ print("Logging in to Goodreads")
 
 # Find username input
 user = browser.find_element(By.XPATH, '//*[@id="ap_email"]')
-user.send_keys('kyoyaootori187@gmail.com')
+user.send_keys('your_user_email')
 
 # Find password input
 password = browser.find_element(By.XPATH, '//*[@id="ap_password"]')
@@ -76,7 +76,7 @@ if __name__ == "__main__":
         get_book_url(book_urls, browser, genre_url)
 
     # Write data to a JSON file
-    with open("data.json", "w", encoding="utf-8") as file:
+    with open("book_urls.json", "w", encoding="utf-8") as file:
         json.dump(book_urls, file, indent=4, ensure_ascii=False)
 
     # Closing the browser
