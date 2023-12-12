@@ -34,15 +34,32 @@
 
 
 ## TODO
-== Nhungdt
+
+**Nhungdt**
 - [ ] crawl data
   - [x] books
+  - [ ] should we just crawl the listed columns (*Books* table) ?
   - [ ] interactives
+- [ ] clean data
+  - [ ] look for any Missing Data
+  - [ ] populate or remove Missing Data
 - [ ] NLP
 
-== DuongDq
-- [ ] convert to Categorical variable
-- [ ] rating -> numberic
-- [ ] translate review to English, remove specific characters, meaningless words 
-- [ ] rating hisrogram 
-- [ ] public second :) -> year
+**DuongDQ**
+- [ ] clean data
+  - [ ] convert to Categorical variable
+  - [ ] rating -> numeric
+  - [ ] translate review to English, remove specific characters, meaningless words 
+  - [ ] rating hisrogram 
+  - [ ] public year -> categoty
+- [x] check data loaded, dimensions, info, ...
+
+**Phuongvt**
+- [ ] look for any distinct values in Categorical columns
+- [ ] data understanding by Visualization 
+  - [ ] Phượng tự thêm vào nhé
+  - [ ] 
+  (Correlation - shows relataion of Numerical columns  
+    Chi-Square - shows relation of Categorical columns )
+
+**Các idols**
