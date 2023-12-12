@@ -9,7 +9,7 @@
 
 | Trường       | note                  |
 |--------------|-----------------------|
-| ISBN         | id                    |
+| bookURL      | url                    |
 | title        | NLP                   |
 | description  |                       |
 | author       | categorical variable  |
@@ -17,7 +17,8 @@
 | language     |                       |
 | ratingCounts | numberic              |
 | reviewCounts |                       |
-| avgCounts    |                       |
+| avgRating    |                       |
+| ratingHistogram|                       |
 | pageNumber   |                       |
 | publicYear   |                       |
 
@@ -25,7 +26,7 @@
 
 | Trường       | note                  |
 |--------------|-----------------------|
-| bookURL      | book id               |
+| bookURL      | url                   |
 | userId       |                       |
 | rating       | 0 -> 5                |
 | review       | NLP                   |
@@ -33,6 +34,15 @@
 
 
 ## TODO
-- [] shorten the user review to 1-2 
-- [] convert to Categorical variable
+== Nhungdt
+- [] crawl data
+  - [x] books
+  - [] interactives
 - [] NLP
+
+== DuongDq
+- [] convert to Categorical variable
+- [] rating -> numberic
+- [] translate review to English, remove specific characters, meaningless words 
+- [] rating hisrogram 
+- [] public second :) -> year
