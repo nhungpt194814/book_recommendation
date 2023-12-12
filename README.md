@@ -35,14 +35,14 @@
 
 ## TODO
 == Nhungdt
-- [] crawl data
+- [ ] crawl data
   - [x] books
-  - [] interactives
-- [] NLP
+  - [ ] interactives
+- [ ] NLP
 
 == DuongDq
-- [] convert to Categorical variable
-- [] rating -> numberic
-- [] translate review to English, remove specific characters, meaningless words 
-- [] rating hisrogram 
-- [] public second :) -> year
+- [ ] convert to Categorical variable
+- [ ] rating -> numberic
+- [ ] translate review to English, remove specific characters, meaningless words 
+- [ ] rating hisrogram 
+- [ ] public second :) -> year
