@@ -22,8 +22,8 @@ def get_data(url):
     for article in articles:
         if iteration_count >= max_iterations:
             break
-
-        user_link = article.find('a', class_='Avatar Avatar--medium')
+        
+        user_link = article.select_one('a.Avatar.Avatar--medium')
         if user_link:
             user = user_link['href'].replace(prefix, "")
         else:
@@ -45,6 +45,7 @@ def get_data(url):
         }
         data_items.append(item)
         iteration_count += 1
+        print(iteration_count)
 
 def read_strings_from_json(json_file_path):
     with open(json_file_path, 'r') as file:
@@ -55,9 +56,11 @@ def read_strings_from_json(json_file_path):
             return None
 
 def crawl_list():
-    url_list = read_strings_from_json("./bookUrl.json")
-    for url in url_list:
-        get_data(url)       
+    url_list = read_strings_from_json("./bookUrlExt.json")
+
+    for url in url_list[1:5]:
+        get_data(url)  
+    # get_data('https://www.goodreads.com/book/show/77203.The_Kite_Runner')     
 
 if __name__ == "__main__":
     crawl_list()
