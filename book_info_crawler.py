@@ -88,7 +88,7 @@ def read_strings_from_json(json_file_path):
 def crawl_list():
     url_list = read_strings_from_json("./book_urls_unique.json")
     # thay đổi số lượng ở url_list[số bắt đầu:số kết thúc]
-    for url in url_list[20:40]:
+    for url in url_list[2000:4000]:
         get_data(url)       
 
 if __name__ == "__main__":

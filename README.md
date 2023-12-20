@@ -51,7 +51,7 @@
   - [ ] rating -> numeric
   - [ ] translate review to English, remove specific characters, meaningless words 
   - [ ] rating hisrogram 
-  - [ ] public year -> categoty
+  - [x] public year
 - [x] check data loaded, dimensions, info, ...
 
 **Phuongvt**
