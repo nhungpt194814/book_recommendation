@@ -62,4 +62,5 @@
   (Correlation - shows relataion of Numerical columns  
     Chi-Square - shows relation of Categorical columns )
 - [ ] complete report
+
 **Các idols**
