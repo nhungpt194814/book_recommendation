@@ -57,9 +57,9 @@
 **Phuongvt**
 - [ ] look for any distinct values in Categorical columns
 - [ ] data understanding by Visualization 
-  - [ ] Phượng tự thêm vào nhé
+  - [ ] Visualization data
   - [ ] 
   (Correlation - shows relataion of Numerical columns  
     Chi-Square - shows relation of Categorical columns )
-
+- [ ] complete report
 **Các idols**
