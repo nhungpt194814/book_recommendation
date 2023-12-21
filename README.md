@@ -9,12 +9,12 @@
 
 | Trường       | note                  |
 |--------------|-----------------------|
-| bookURL      | url                    |
+| bookURL      |                     |
 | title        | NLP                   |
 | description  |                       |
-| author       | categorical variable  |
-| genres       |                       |
-| language     |                       |
+| author       |   |
+| genres       | categorical variable     |
+| language     | categorical variable   |
 | ratingCounts | numberic              |
 | reviewCounts |                       |
 | avgRating    |                       |
@@ -36,30 +36,26 @@
 ## TODO
 
 **Nhungdt**
-- [ ] crawl data
+- [x] crawl data
   - [x] books
   - [ ] should we just crawl the listed columns (*Books* table) ?
   - [ ] interactives
-- [ ] clean data
-  - [ ] look for any Missing Data
-  - [ ] populate or remove Missing Data
 - [ ] NLP
 
 **DuongDQ**
-- [ ] clean data
-  - [ ] convert to Categorical variable
-  - [ ] rating -> numeric
-  - [ ] translate review to English, remove specific characters, meaningless words 
-  - [ ] rating hisrogram 
-  - [x] public year
 - [x] check data loaded, dimensions, info, ...
-
-**Phuongvt**
+- [x] clean data
+  - [x] convert to Categorical variable
+  - [x] rating -> numeric
+  - [x] translate review to English, remove specific characters, meaningless words 
+  - [x] rating hisrogram 
+  - [x] public year
+  - [x] look for any Missing Data
+  - [x] populate or remove Missing Data
 - [ ] look for any distinct values in Categorical columns
+**Phuongvt**
 - [ ] data understanding by Visualization 
   - [ ] Phượng tự thêm vào nhé
   - [ ] 
   (Correlation - shows relataion of Numerical columns  
     Chi-Square - shows relation of Categorical columns )
-
-**Các idols**
