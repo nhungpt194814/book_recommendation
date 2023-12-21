@@ -46,7 +46,7 @@
 - [x] check data loaded, dimensions, info, ...
 - [x] clean data
   - [x] convert to Categorical variable
-  - [x] rating -> numeric
+  - [x] rating -> numeri
   - [x] translate review to English, remove specific characters, meaningless words 
   - [x] rating hisrogram 
   - [x] public year
@@ -55,7 +55,10 @@
 - [ ] look for any distinct values in Categorical columns
 **Phuongvt**
 - [ ] data understanding by Visualization 
-  - [ ] Phượng tự thêm vào nhé
+  - [ ] Visualization data
   - [ ] 
   (Correlation - shows relataion of Numerical columns  
     Chi-Square - shows relation of Categorical columns )
+- [ ] complete report
+
+**Các idols**
