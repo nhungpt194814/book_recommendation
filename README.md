@@ -47,9 +47,9 @@
 
 **DuongDQ**
 - [ ] clean data
-  - [ ] convert to Categorical variable
-  - [ ] rating -> numeric
-  - [ ] translate review to English, remove specific characters, meaningless words 
+  - [x] convert to Categorical variable
+  - [x] rating -> numeric
+  - [x] translate review to English, remove specific characters, meaningless words 
   - [ ] rating hisrogram 
   - [x] public year
 - [x] check data loaded, dimensions, info, ...
