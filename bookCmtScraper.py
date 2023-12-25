@@ -6,16 +6,26 @@ import ftfy
 
 data_items = []
 prefix = "https://www.goodreads.com/user/show/"
+current_index = 0
 
 def get_data(url):
+    global current_index
+
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
     
-    title = soup.find("h1", class_="Text Text__title1")
-    
     reviews = soup.find('div', class_='ReviewsSection')
+    if reviews is None:
+        print(f"Skipping URL index {current_index} because of missing 'ReviewsSection'.")
+        return
+
+    title = soup.find("h1", class_="Text Text__title1")
     articles = reviews.find_all('article', class_='ReviewCard')
     
+    if articles is None:
+        print(f"Skipping URL index {current_index} because of missing 'ReviewCard'.")
+        return
+
     max_iterations = 31
     iteration_count = 0
 
@@ -45,7 +55,6 @@ def get_data(url):
         }
         data_items.append(item)
         iteration_count += 1
-        print(iteration_count)
 
 def read_strings_from_json(json_file_path):
     with open(json_file_path, 'r') as file:
@@ -56,13 +65,14 @@ def read_strings_from_json(json_file_path):
             return None
 
 def crawl_list():
+    global current_index
     url_list = read_strings_from_json("./bookUrlExt.json")
 
-    for url in url_list[1:5]:
-        get_data(url)  
-    # get_data('https://www.goodreads.com/book/show/77203.The_Kite_Runner')     
+    for url in url_list:
+        get_data(url)
+        current_index += 1  
 
 if __name__ == "__main__":
     crawl_list()
-    with open("bookCommentNew.json", "w", encoding='utf-8') as file:
+    with open("bookComment.json", "w", encoding='utf-8') as file:
         json.dump(data_items, file, indent=4, ensure_ascii=False)
