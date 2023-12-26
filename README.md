@@ -53,6 +53,7 @@
   - [x] look for any Missing Data
   - [x] populate or remove Missing Data
 - [ ] look for any distinct values in Categorical columns
+
 **Phuongvt**
 - [ ] data understanding by Visualization 
   - [ ] Visualization data
